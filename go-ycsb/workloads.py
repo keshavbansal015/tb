@@ -3,9 +3,15 @@ from typing import Dict, Any, List, Tuple
 
 # Constants
 TOTAL_DATA_SIZE_BYTES = 256 * 1024 * 1024       # 256 MB
-OPERATION_COUNT_LOW_BLOCK = 2000000             # 2 Million
-OPERATION_COUNT_HIGH_BLOCK = 500000             # 500K
+OPERATION_COUNT_LOW_BLOCK = 1000000             # 2 Million, 4kb*1000000 = 4GB
+OPERATION_COUNT_STANDARD_BLOCK = 500000          # 500K, 8kb*500000 = 4GB
+OPERATION_COUNT_MEDIUM_BLOCK = 5000        # 1 Million, 1MB*5000 = 5GB
+OPERATION_COUNT_HIGH_BLOCK = 1000             # 500K, 8MB*1000 = 8GB
+
 BLOCK_SIZE_THRESHOLD_BYTES = 4096               # 4 KB
+BLOCK_SIZE_THRESHOLD_MEDIUM_BYTES = 8192                # 8 KB
+BLOCK_SIZE_THRESHOLD_STANDARD_BYTES = 1048576             # 1 KB
+BLOCK_SIZE_THRESHOLD_LOW_BYTES = 1048576*4 # 512 B
 
 # Block sizes (in bytes) representing the requested range
 # [128B, 512B, 1KB, 4KB, 8KB, 1MB, 2MB, 4MB, 8MB]
@@ -18,7 +24,6 @@ BLOCK_SIZES_BYTES = [
     1048576,      # 1 MB
     1048576*2,    # 2 MB 
     1048576*4,    # 4 MB
-    8388608       # 8 MB
 ]
 
 # Define the base properties common to all workloads
@@ -101,6 +106,10 @@ def generate_custom_workloads(output_dir: str):
         # 2. Set Operation Count based on 4KB threshold
         if block_size_bytes <= BLOCK_SIZE_THRESHOLD_BYTES:
             op_count = OPERATION_COUNT_LOW_BLOCK
+        elif block_size_bytes <= BLOCK_SIZE_THRESHOLD_MEDIUM_BYTES:
+            op_count = OPERATION_COUNT_STANDARD_BLOCK
+        elif block_size_bytes <= BLOCK_SIZE_THRESHOLD_STANDARD_BYTES:
+            op_count = OPERATION_COUNT_MEDIUM_BLOCK
         else:
             op_count = OPERATION_COUNT_HIGH_BLOCK
             

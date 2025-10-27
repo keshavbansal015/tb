@@ -6,7 +6,7 @@
   tasks:
   - name: Run the Client
     ansible.builtin.shell:
-      cmd: "/home/cc/treebeard/client -duration 20 -conf /home/cc/treebeard -output /home/cc/treebeard/output.txt -logpath /home/cc/treebeard/client.log"
+      cmd: "/home/cc/treebeard/client -conf /home/cc/treebeard -output /home/cc/treebeard/output.txt -logpath /home/cc/treebeard/client.log"
   - name: Get the output
     ansible.builtin.fetch:
       src: "/home/cc/treebeard/output.txt"
