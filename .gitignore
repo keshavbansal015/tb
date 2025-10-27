@@ -1,0 +1,17 @@
+bolt
+snapshots/
+cmd/client/client
+cmd/router/router
+cmd/shardnode/shardnode
+cmd/oramnode/oramnode
+*.rdb
+*.log
+*.prof
+*.DS_Store
+db.txt
+trace.txt
+*.txt
+.ipynb_checkpoints/*
+hosts
+*.xlsx
+*.png

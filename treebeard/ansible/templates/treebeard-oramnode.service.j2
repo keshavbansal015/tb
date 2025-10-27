@@ -1,0 +1,24 @@
+[Unit]
+Description=Treebeard Oramnode
+Requires=network.target
+After=syslog.target network.target
+
+[Service]
+Type=simple
+ExecStart=/home/cc/treebeard/oramnode/oramnode \
+    -oramnodeid {{ item.id }} \
+    -bindip {{ item.local_bind_ip }} \
+    -advip {{ item.exposed_ip }} \
+    -rpcport {{ item.port }} \
+    -replicaid {{ item.replicaid }} \
+    -raftport {{ item.raftport }} \
+    {% if item.replicaid!=0 %}
+    # this assumes there are 3 replicas (Dangerous assmumption)
+    {{'-joinaddr=' + oramnode_endpoints.endpoints[item.id * 3].exposed_ip + ':' + oramnode_endpoints.endpoints[item.id * 3].port | string }} \
+    {% endif %}
+    -conf /home/cc/treebeard/ \
+    -logpath {{ '/home/cc/treebeard/oramnode/'  + item.id | string + '/' + item.replicaid | string + '/all.log' }}
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

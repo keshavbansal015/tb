@@ -1,0 +1,14 @@
+# Expects experiment_output_path to be passed as an extra variable
+- name: Run the Experiment
+  hosts: host0
+  become: yes
+  become_user: cc
+  tasks:
+  - name: Run the Client
+    ansible.builtin.shell:
+      cmd: "/home/cc/treebeard/client -duration 20 -conf /home/cc/treebeard -output /home/cc/treebeard/output.txt -logpath /home/cc/treebeard/client.log"
+  - name: Get the output
+    ansible.builtin.fetch:
+      src: "/home/cc/treebeard/output.txt"
+      dest: "{{ experiment_output_path }}"
+      flat: yes
