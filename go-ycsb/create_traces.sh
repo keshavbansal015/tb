@@ -55,7 +55,7 @@ for WORKLOAD_FILE in "$WORKLOAD_DIR"/*.properties; do
  
   # --- NEW: Move the generated data files ---
   # Moves all files starting with 'usertable' to the specified output directory.
-  mv usertable* "$YCSB_DATA_OUTPUT_DIR" 2>/dev/null
+  # mv usertable* "$YCSB_DATA_OUTPUT_DIR" 2>/dev/null
   echo "Moved usertable* files to $YCSB_DATA_OUTPUT_DIR"
   # ------------------------------------------
 

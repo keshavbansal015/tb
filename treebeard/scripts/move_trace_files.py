@@ -3,12 +3,11 @@ import shutil
 from pathlib import Path
 
 # Directory where your raw YCSB results are currently stored
-YCSB_RESULTS_DIR = "go-ycsb"
-
-sizes = [128, 512, 1024, 4096, 8192, 1048576, 1048576*2, 1048576*4, 8388608]
+YCSB_RESULTS_DIR = "/home/cc/tb/go-ycsb/ycsb_data/"
+DEST_BASE = "../experiments/"
+sizes = [128, 512, 1024, 4096, 8192, 1048576, 1048576*2, 1048576*4]
 
 WORKLOAD_MAP = {}
-
 
 def format_block_size(size_bytes: int) -> str:
     """Formats block size for filename (e.g., 1024 -> 1KB, 8388608 -> 8MB)."""
@@ -23,13 +22,11 @@ def format_block_size(size_bytes: int) -> str:
 for size in sizes:
     for machines in [1, 2, 3]:
         for op in ['read', 'update']:
-            file_source = "usertable_size_{}B_machines_{}_{}_only".format(size, machines, op)
             if op == 'read':
-                dest_path = f"./tb/treebeard/experiments/read_ops/mac_{machines}_{format_block_size(size)}/"
+                dest_path = DEST_BASE + f"read_ops/mac_{machines}_{format_block_size(size)}/"
             else:
-                dest_path = f"./tb/treebeard/experiments/write_ops/mac_{machines}_{format_block_size(size)}/"
-
-            workload_name = f"usertable_size_{size}B_machines_{machines}_{op}"
+                dest_path = DEST_BASE + f"write_ops/mac_{machines}_{format_block_size(size)}/"
+            workload_name =  "usertable_{}_{}".format(format_block_size(size), op)
             WORKLOAD_MAP[dest_path] = workload_name
 
 

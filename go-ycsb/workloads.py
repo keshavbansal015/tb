@@ -49,7 +49,9 @@ BASE_PROPERTIES = {
     
     "# Distribution (Fixed to uniform for this experiment)": "",
     "requestdistribution": "uniform",
-    "zipfianconstant": "0.0"
+    "zipfianconstant": "0.0",
+    "table": "",  # Will be set uniquely per workload 
+
 }
 
 def generate_properties_file(filepath: str, properties: Dict[str, Any]):

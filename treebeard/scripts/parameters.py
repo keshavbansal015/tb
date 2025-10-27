@@ -3,7 +3,7 @@ import math
 from typing import Dict, Any, List
 
 # --- Constants imported from the YCSB Canvas for consistency ---
-TOTAL_DATA_SIZE_BYTES = 16 * 1024 * 1024 * 1024  # 16 GB
+TOTAL_DATA_SIZE_BYTES = 256 * 1024 * 1024  # 256 MB
 # Block sizes (in bytes) to iterate through
 BLOCK_SIZES_BYTES: List[int] = [
     128,          # 128 B
@@ -14,7 +14,6 @@ BLOCK_SIZES_BYTES: List[int] = [
     1048576,      # 1 MB
     1048576*2,    # 2 MB
     1048576*4,    # 4 MB
-    8388608       # 8 MB
 ]
 # -------------------------------------------------------------
 
