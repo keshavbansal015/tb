@@ -243,7 +243,7 @@ if __name__ == '__main__':
         # shutil.rmtree('temp_ip_update_data')
     
     # ROOT_MOCK_DIR = 'temp_ip_update_data'
-    ROOT_DIR = './treebeard/experiments'  # Change this to your actual root directory if needed
+    ROOT_DIR = '../experiments'  # Change this to your actual root directory if needed
     IP_LIST_FILE = 'new_ip_pool.txt'
     GLOBAL_DB_FILE = 'global_hosts_map.json'
     
