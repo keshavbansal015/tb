@@ -93,3 +93,8 @@ run_experiments() {
 
 # Pass the first command line argument to run_experiments
 run_experiments "$1"
+
+
+
+# for i in {1..3}; do for size in 128 256 512 1024; do mkdir -p "machine_${i}_${size}B"; done; done
+# for dir in mac_1*; do if [ -d "$dir" ]; then cp source_dir/* "$dir/"; fi; done
