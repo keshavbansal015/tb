@@ -2,7 +2,7 @@ import os
 from typing import Dict, Any, List, Tuple
 
 # Constants
-TOTAL_DATA_SIZE_BYTES = 16 * 1024 * 1024 * 1024  # 16 GB
+TOTAL_DATA_SIZE_BYTES = 256 * 1024 * 1024       # 256 MB
 OPERATION_COUNT_LOW_BLOCK = 2000000             # 2 Million
 OPERATION_COUNT_HIGH_BLOCK = 500000             # 500K
 BLOCK_SIZE_THRESHOLD_BYTES = 4096               # 4 KB
@@ -55,7 +55,7 @@ def generate_properties_file(filepath: str, properties: Dict[str, Any]):
     # Sort keys to ensure consistent file order, placing comments first
     # Simple list of keys to ensure order: Comments, field, record, op_mix, distribution
     ordered_keys = list(BASE_PROPERTIES.keys())
-    print(ordered_keys)
+    # print(ordered_keys)
     with open(filepath, 'w') as f:
         # Write keys in the desired order
         for key in ordered_keys:
