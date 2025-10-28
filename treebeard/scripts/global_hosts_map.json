@@ -1,0 +1,304 @@
+{
+    "../experiments/example/functional": {
+        "host0": "ip.ip.ip.ip"
+    },
+    "../experiments/read_ops/mac_1_2KB": {
+        "host1": "10.0.0.8",
+        "host5": "10.0.0.5"
+    },
+    "../experiments/read_ops/mac_1_4MB": {
+        "host1": "10.0.0.8",
+        "host5": "10.0.0.5"
+    },
+    "../experiments/read_ops/mac_2_1024B": {
+        "host1": "10.0.0.8",
+        "host5": "10.0.0.5"
+    },
+    "../experiments/read_ops/mac_1_8KB": {
+        "host1": "10.0.0.8",
+        "host5": "10.0.0.5"
+    },
+    "../experiments/read_ops/mac_1_256B": {
+        "host1": "10.0.0.8",
+        "host5": "10.0.0.5"
+    },
+    "../experiments/read_ops/mac_2_2KB": {
+        "host1": "10.0.0.8",
+        "host5": "10.0.0.5"
+    },
+    "../experiments/read_ops/mac_3_128B": {
+        "host1": "10.0.0.8",
+        "host2": "10.0.0.9",
+        "host5": "10.0.0.5"
+    },
+    "../experiments/read_ops/mac_2_4MB": {
+        "host1": "10.0.0.8",
+        "host5": "10.0.0.5"
+    },
+    "../experiments/read_ops/mac_2_8KB": {
+        "host1": "10.0.0.8",
+        "host5": "10.0.0.5"
+    },
+    "../experiments/read_ops/mac_3_8KB": {
+        "host1": "10.0.0.8",
+        "host2": "10.0.0.9",
+        "host5": "10.0.0.5"
+    },
+    "../experiments/read_ops/mac_3_4MB": {
+        "host1": "10.0.0.8",
+        "host2": "10.0.0.9",
+        "host5": "10.0.0.5"
+    },
+    "../experiments/read_ops/mac_3_2KB": {
+        "host1": "10.0.0.8",
+        "host2": "10.0.0.9",
+        "host5": "10.0.0.5"
+    },
+    "../experiments/read_ops/mac_2_128B": {
+        "host1": "10.0.0.8",
+        "host5": "10.0.0.5"
+    },
+    "../experiments/read_ops/mac_3_512B": {
+        "host1": "10.0.0.8",
+        "host2": "10.0.0.9",
+        "host5": "10.0.0.5"
+    },
+    "../experiments/read_ops/mac_1_1KB": {
+        "host1": "10.0.0.8",
+        "host5": "10.0.0.5"
+    },
+    "../experiments/read_ops/mac_1_1024B": {
+        "host1": "10.0.0.8",
+        "host5": "10.0.0.5"
+    },
+    "../experiments/read_ops/mac_3_1024B": {
+        "host1": "10.0.0.8",
+        "host2": "10.0.0.9",
+        "host5": "10.0.0.5"
+    },
+    "../experiments/read_ops/mac_3_1KB": {
+        "host1": "10.0.0.8",
+        "host2": "10.0.0.9",
+        "host5": "10.0.0.5"
+    },
+    "../experiments/read_ops/mac_2_1KB": {
+        "host1": "10.0.0.8",
+        "host5": "10.0.0.5"
+    },
+    "../experiments/read_ops/mac_2_512B": {
+        "host1": "10.0.0.8",
+        "host5": "10.0.0.5"
+    },
+    "../experiments/read_ops/mac_2_4KB": {
+        "host1": "10.0.0.8",
+        "host5": "10.0.0.5"
+    },
+    "../experiments/read_ops/mac_2_2MB": {
+        "host1": "10.0.0.8",
+        "host5": "10.0.0.5"
+    },
+    "../experiments/read_ops/mac_3_2MB": {
+        "host1": "10.0.0.8",
+        "host2": "10.0.0.9",
+        "host5": "10.0.0.5"
+    },
+    "../experiments/read_ops/mac_1_512B": {
+        "host1": "10.0.0.8",
+        "host5": "10.0.0.5"
+    },
+    "../experiments/read_ops/mac_3_4KB": {
+        "host1": "10.0.0.8",
+        "host2": "10.0.0.9",
+        "host5": "10.0.0.5"
+    },
+    "../experiments/read_ops/mac_1_4KB": {
+        "host1": "10.0.0.8",
+        "host5": "10.0.0.5"
+    },
+    "../experiments/read_ops/mac_1_2MB": {
+        "host1": "10.0.0.8",
+        "host5": "10.0.0.5"
+    },
+    "../experiments/read_ops/mac_3_1MB": {
+        "host1": "10.0.0.8",
+        "host2": "10.0.0.9",
+        "host5": "10.0.0.5"
+    },
+    "../experiments/read_ops/mac_2_1MB": {
+        "host1": "10.0.0.8",
+        "host5": "10.0.0.5"
+    },
+    "../experiments/read_ops/mac_1_128B": {
+        "host1": "10.0.0.8",
+        "host5": "10.0.0.5"
+    },
+    "../experiments/read_ops/mac_3_256B": {
+        "host1": "10.0.0.8",
+        "host2": "10.0.0.9",
+        "host5": "10.0.0.5"
+    },
+    "../experiments/read_ops/mac_1_1MB": {
+        "host1": "10.0.0.8",
+        "host5": "10.0.0.5"
+    },
+    "../experiments/read_ops/mac_2_256B": {
+        "host1": "10.0.0.8",
+        "host5": "10.0.0.5"
+    },
+    "../experiments/scaling_experiments/3machines": {
+        "host1": "10.0.0.8",
+        "host2": "10.0.0.9",
+        "host5": "10.0.0.5"
+    },
+    "../experiments/scaling_experiments/2machines": {
+        "host1": "10.0.0.8",
+        "host5": "10.0.0.5"
+    },
+    "../experiments/scaling_experiments/1machines": {
+        "host1": "10.0.0.8",
+        "host5": "10.0.0.5"
+    },
+    "../experiments/write_ops/mac_1_2KB": {
+        "host1": "10.0.0.8",
+        "host5": "10.0.0.5"
+    },
+    "../experiments/write_ops/mac_1_4MB": {
+        "host1": "10.0.0.8",
+        "host5": "10.0.0.5"
+    },
+    "../experiments/write_ops/mac_2_1024B": {
+        "host1": "10.0.0.8",
+        "host5": "10.0.0.5"
+    },
+    "../experiments/write_ops/mac_1_8KB": {
+        "host1": "10.0.0.8",
+        "host5": "10.0.0.5"
+    },
+    "../experiments/write_ops/mac_1_256B": {
+        "host1": "10.0.0.8",
+        "host5": "10.0.0.5"
+    },
+    "../experiments/write_ops/mac_2_2KB": {
+        "host1": "10.0.0.8",
+        "host5": "10.0.0.5"
+    },
+    "../experiments/write_ops/mac_3_128B": {
+        "host1": "10.0.0.8",
+        "host2": "10.0.0.9",
+        "host5": "10.0.0.5"
+    },
+    "../experiments/write_ops/mac_2_4MB": {
+        "host1": "10.0.0.8",
+        "host5": "10.0.0.5"
+    },
+    "../experiments/write_ops/mac_2_8KB": {
+        "host1": "10.0.0.8",
+        "host5": "10.0.0.5"
+    },
+    "../experiments/write_ops/mac_3_8KB": {
+        "host1": "10.0.0.8",
+        "host2": "10.0.0.9",
+        "host5": "10.0.0.5"
+    },
+    "../experiments/write_ops/mac_3_4MB": {
+        "host1": "10.0.0.8",
+        "host2": "10.0.0.9",
+        "host5": "10.0.0.5"
+    },
+    "../experiments/write_ops/mac_3_2KB": {
+        "host1": "10.0.0.8",
+        "host2": "10.0.0.9",
+        "host5": "10.0.0.5"
+    },
+    "../experiments/write_ops/mac_2_128B": {
+        "host1": "10.0.0.8",
+        "host5": "10.0.0.5"
+    },
+    "../experiments/write_ops/mac_3_512B": {
+        "host1": "10.0.0.8",
+        "host2": "10.0.0.9",
+        "host5": "10.0.0.5"
+    },
+    "../experiments/write_ops/mac_1_1KB": {
+        "host1": "10.0.0.8",
+        "host5": "10.0.0.5"
+    },
+    "../experiments/write_ops/mac_1_1024B": {
+        "host1": "10.0.0.8",
+        "host5": "10.0.0.5"
+    },
+    "../experiments/write_ops/mac_3_1024B": {
+        "host1": "10.0.0.8",
+        "host2": "10.0.0.9",
+        "host5": "10.0.0.5"
+    },
+    "../experiments/write_ops/mac_3_1KB": {
+        "host1": "10.0.0.8",
+        "host2": "10.0.0.9",
+        "host5": "10.0.0.5"
+    },
+    "../experiments/write_ops/mac_2_1KB": {
+        "host1": "10.0.0.8",
+        "host5": "10.0.0.5"
+    },
+    "../experiments/write_ops/mac_2_512B": {
+        "host1": "10.0.0.8",
+        "host5": "10.0.0.5"
+    },
+    "../experiments/write_ops/mac_2_4KB": {
+        "host1": "10.0.0.8",
+        "host5": "10.0.0.5"
+    },
+    "../experiments/write_ops/mac_2_2MB": {
+        "host1": "10.0.0.8",
+        "host5": "10.0.0.5"
+    },
+    "../experiments/write_ops/mac_3_2MB": {
+        "host1": "10.0.0.8",
+        "host2": "10.0.0.9",
+        "host5": "10.0.0.5"
+    },
+    "../experiments/write_ops/mac_1_512B": {
+        "host1": "10.0.0.8",
+        "host5": "10.0.0.5"
+    },
+    "../experiments/write_ops/mac_3_4KB": {
+        "host1": "10.0.0.8",
+        "host2": "10.0.0.9",
+        "host5": "10.0.0.5"
+    },
+    "../experiments/write_ops/mac_1_4KB": {
+        "host1": "10.0.0.8",
+        "host5": "10.0.0.5"
+    },
+    "../experiments/write_ops/mac_1_2MB": {
+        "host1": "10.0.0.8",
+        "host5": "10.0.0.5"
+    },
+    "../experiments/write_ops/mac_3_1MB": {
+        "host1": "10.0.0.8",
+        "host2": "10.0.0.9",
+        "host5": "10.0.0.5"
+    },
+    "../experiments/write_ops/mac_2_1MB": {
+        "host1": "10.0.0.8",
+        "host5": "10.0.0.5"
+    },
+    "../experiments/write_ops/mac_1_128B": {
+        "host1": "10.0.0.8",
+        "host5": "10.0.0.5"
+    },
+    "../experiments/write_ops/mac_3_256B": {
+        "host1": "10.0.0.8",
+        "host2": "10.0.0.9",
+        "host5": "10.0.0.5"
+    },
+    "../experiments/write_ops/mac_1_1MB": {
+        "host1": "10.0.0.8",
+        "host5": "10.0.0.5"
+    },
+    "../experiments/write_ops/mac_2_256B": {
+        "host1": "10.0.0.8",
+        "host5": "10.0.0.5"
+    }
+}
