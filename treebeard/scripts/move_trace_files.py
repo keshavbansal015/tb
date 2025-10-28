@@ -5,7 +5,7 @@ from pathlib import Path
 # Directory where your raw YCSB results are currently stored
 YCSB_RESULTS_DIR = "/home/cc/tb/go-ycsb/ycsb_data/"
 DEST_BASE = "../experiments/"
-sizes = [128, 512, 1024, 4096, 8192, 1048576, 1048576*2, 1048576*4]
+sizes = [128, 256, 512, 1024, 2048, 4096, 8192, 1048576, 1048576*2, 1048576*4]
 
 WORKLOAD_MAP = {}
 

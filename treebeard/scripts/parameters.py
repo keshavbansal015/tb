@@ -7,8 +7,10 @@ TOTAL_DATA_SIZE_BYTES = 256 * 1024 * 1024  # 256 MB
 # Block sizes (in bytes) to iterate through
 BLOCK_SIZES_BYTES: List[int] = [
     128,          # 128 B
+    256,          # 256 B
     512,          # 512 B
     1024,         # 1 KB
+    2048,         # 2 KB
     4096,         # 4 KB
     8192,         # 8 KB
     1048576,      # 1 MB

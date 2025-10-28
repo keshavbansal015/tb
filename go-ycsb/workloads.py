@@ -17,8 +17,10 @@ BLOCK_SIZE_THRESHOLD_LOW_BYTES = 1048576*4 # 512 B
 # [128B, 512B, 1KB, 4KB, 8KB, 1MB, 2MB, 4MB, 8MB]
 BLOCK_SIZES_BYTES = [
     128,          # 128 B
+    256,          # 256 B
     512,          # 512 B
     1024,         # 1 KB
+    2048,         # 2 KB
     4096,         # 4 KB (The threshold)
     8192,         # 8 KB
     1048576,      # 1 MB

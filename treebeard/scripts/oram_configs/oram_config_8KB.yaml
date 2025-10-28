@@ -1,5 +1,5 @@
 # ORAM Configuration for Block Size: 8192 bytes
-# Tree Height calculated as ceil(log2(16GB / block-size)) = 21
+# Tree Height calculated as ceil(log2(16GB / block-size)) = 15
 max-blocks-to-send: 400
 eviction-rate: 100
 evict-path-count: 200
@@ -9,7 +9,7 @@ trace: true
 Z: 1
 S: 4
 shift: 1
-tree-height: 21
+tree-height: 15
 redis-pipeline-size: 3000000
 max-requests: 15000
 block-size: 8192
