@@ -3,7 +3,7 @@
 - name: Deploy the system
   hosts: all
   become: yes
-  become_user: cc
+  #become_user: cc
   tasks:
     # - name: Update and upgrade apt
     #   ansible.builtin.apt:
