@@ -143,69 +143,11 @@ def process_and_generate_config_files(root_dir: str):
     print("\nProcessing complete.")
 
 
-# --- Mock Setup and Execution ---
 
-def create_mock_directory_structure(root_dir):
-    """
-    Creates a mock directory structure mimicking the user's setup for testing.
-    The content is placed in two different YAML files per experiment.
-    """
-    if os.path.exists(root_dir):
-        shutil.rmtree(root_dir)
-    os.makedirs(root_dir)
-
-    mock_structure = [
-        # Experiment 1: example/functional/ (Two YAML files)
-        (f'{root_dir}/example/functional/oramnode_endpoints.yaml', 
-         """endpoints:
-  - exposed_ip: 52.235.62.184
-    local_bind_ip: 10.0.0.8
-    deploy_host: host1
-    port: 8845
-  - exposed_ip: 52.235.56.209
-    local_bind_ip: 10.0.0.9
-    deploy_host: host2
-    port: 8845
-"""),
-        (f'{root_dir}/example/functional/router_endpoints.yaml', 
-         """endpoints:
-  - exposed_ip: 52.235.58.158
-    local_bind_ip: 10.0.0.10
-    deploy_host: router1
-    port: 8745
-"""),
-        # Experiment 2: paper_blocksize_experiments/1024/ (One YAML file)
-        (f'{root_dir}/paper_blocksize_experiments/1024/shardnode_endpoints.yaml', 
-         """endpoints:
-  - exposed_ip: 1.1.1.1
-    local_bind_ip: 192.168.0.100
-    deploy_host: shard1
-  - exposed_ip: 2.2.2.2
-    local_bind_ip: 192.168.0.101
-    deploy_host: shard2
-"""),
-        # Experiment 3: paper_dist_experiments/uniform/ (One YAML file)
-        (f'{root_dir}/paper_dist_experiments/uniform/parameters.yaml', 
-         """settings:
-  distribution: uniform
-endpoints:
-  - exposed_ip: 3.3.3.3
-    local_bind_ip: 172.16.0.1
-    deploy_host: dist_host_A
-""")
-    ]
-    
-    for full_path, content in mock_structure:
-        os.makedirs(os.path.dirname(full_path), exist_ok=True)
-        with open(full_path, 'w', encoding='utf-8') as f:
-            f.write(content)
-            
-    print(f"Mock directory structure created at: {root_dir}")
-    print("-------------------------------------------------------")
 
 
 if __name__ == '__main__':
-    ROOT_DIR = './treebeard/experiments/'
+    ROOT_DIR = '../experiments/'
     
     # Setup mock environment
     # create_mock_directory_structure(ROOT_MOCK_DIR)

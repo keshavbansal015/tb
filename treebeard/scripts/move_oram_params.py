@@ -52,7 +52,7 @@ def execute_config_move():
                 os.makedirs(dest_dir, exist_ok=True)
                 
                 # 3. Define the final file name in the destination
-                dest_file = dest_dir / "oram_config.yaml"
+                dest_file = dest_dir / "parameters.yaml"
                 
                 try:
                     # 4. Copy the config file to the destination

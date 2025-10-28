@@ -43,39 +43,8 @@ def swap_exposed_ip_in_yaml_file(file_path: str):
     else:
         print(f"❌ Error: YAML structure in '{file_path}' is missing the 'endpoints' key or it is not a list.")
 
-# def indent_lines_after_first(file_path: str):
-#     try:
-#         with open(file_path, 'r', encoding='utf-8') as f:
-#             lines = f.readlines()
 
-#     except FileNotFoundError:
-#         print(f"❌ Error: The file '{file_path}' was not found.")
-#         return
-#     except Exception as e:
-#         print(f"❌ An error occurred during file reading: {e}")
-#         return
-
-#     if not lines:
-#         print(f"ℹ️ The file '{file_path}' is empty. No changes made.")
-#         return
-
-#     modified_lines = []
-#     for i, line in enumerate(lines):
-#         if i == 0:
-#             modified_lines.append(line)
-#         else:
-#             modified_lines.append('  ' + line)
-
-#     try:
-#         with open(file_path, 'w', encoding='utf-8') as f:
-#             f.writelines(modified_lines)
-#         print(f"✅ Successfully indented lines 2 through {len(lines)} in '{file_path}'.")
-#     except Exception as e:
-#         print(f"❌ An error occurred during file writing: {e}")
-
-
-
-PATH = "./treebeard/experiments"
+PATH = "../experiments"
 
 paths = get_yaml_file_paths(PATH)
 
