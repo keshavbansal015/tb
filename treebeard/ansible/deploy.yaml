@@ -21,27 +21,27 @@
     #     repo: deb https://download.docker.com/linux/ubuntu bionic stable
     #     state: present
     
-    - name: Add 10.52.0.0/16 to trusted zone
-      ansible.builtin.command:
-        cmd: firewall-cmd --zone=trusted --add-source=10.52.0.0/16
-      register: result
-      changed_when: "'ALREADY_ENABLED' not in result.stderr and 'SUCCESS' in result.stdout"
+    #- name: Add 10.52.0.0/16 to trusted zone
+    #  ansible.builtin.command:
+    #    cmd: firewall-cmd --zone=trusted --add-source=10.52.0.0/16
+    #  register: result
+    #  changed_when: "'ALREADY_ENABLED' not in result.stderr and 'SUCCESS' in result.stdout"
 
-    # New Task: Update package cache (apt update)
-    - name: Update apt cache
-      ansible.builtin.apt:
-        update_cache: yes
+    ## New Task: Update package cache (apt update)
+    #- name: Update apt cache
+    #  ansible.builtin.apt:
+    #    update_cache: yes
 
-    # New Task: Upgrade all packages (apt upgrade -y)
-    - name: Upgrade all packages
-      ansible.builtin.apt:
-        upgrade: yes
+    ## New Task: Upgrade all packages (apt upgrade -y)
+    #- name: Upgrade all packages
+    #  ansible.builtin.apt:
+    #    upgrade: yes
 
-    # --- New Task to Install Redis ---
-    - name: Install Redis Server
-      ansible.builtin.apt:
-        name: redis-server
-        state: present
+    ## --- New Task to Install Redis ---
+    #- name: Install Redis Server
+    #  ansible.builtin.apt:
+    #    name: redis-server
+    #    state: present
 
     # --- Task to Install Packages (converted to match Redis task format) ---
     - name: Install Packages

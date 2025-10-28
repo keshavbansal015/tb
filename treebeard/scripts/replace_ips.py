@@ -95,6 +95,8 @@ def main_processor(root_dir: str, ip_list_filename: str, global_db_filename: str
     global_data = read_global_db(global_db_path)
     
     if not new_ips or not global_data:
+        print(new_ips)
+        print(global_data)
         print("\nProcessing stopped due to missing source files or empty database.")
         return
         

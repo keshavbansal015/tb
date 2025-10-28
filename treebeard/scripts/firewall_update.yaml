@@ -14,9 +14,9 @@
         update_cache: yes
       
     # New Task: Upgrade all packages (apt upgrade -y)
-    - name: Upgrade all packages
-      ansible.builtin.apt:
-        upgrade: yes
+    # - name: Upgrade all packages
+    #   ansible.builtin.apt:
+    #     upgrade: yes
 
 # --- New Task to Install Redis ---
     - name: Install Redis Server
